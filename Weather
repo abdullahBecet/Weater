@@ -17,6 +17,7 @@ def getWeather(city):
         condition=data["weather"][0]["description"]
         return(city,country,temp,icon,condition)
 
+# main set
 def main():
     city=cityEntry.get()
     weather=getWeather(city)
